@@ -11,7 +11,7 @@ The Software would have a public announcements section which can inform people a
 
 The Software will also have a platform to allow victims and police officers to interact with each other in an effective way.
 
-# The Lil Nas X Team
+## The Lil Nas X Team
 
 Andy Lee
 Scrum Master, UI, General Dev
@@ -26,4 +26,4 @@ Mitchell Murphy
 General Dev, Back End
 
 Razin Agida Kaharuba
-General Dev
+General Dev, UI
