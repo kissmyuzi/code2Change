@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "777512199032",
+    "firebase_url": "https://alep-e7816.firebaseio.com",
+    "project_id": "alep-e7816",
+    "storage_bucket": "alep-e7816.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777512199032:android:31698b0add75245a",
+        "android_client_info": {
+          "package_name": "com.example.code2change"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777512199032-66i7b2sdhqals3st56p7nsrnh46mgsr4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY_LIbWe39Q2tA7BTlPtAvtNWsFXq55aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777512199032-66i7b2sdhqals3st56p7nsrnh46mgsr4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
