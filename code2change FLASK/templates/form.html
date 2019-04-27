@@ -2,21 +2,57 @@
 <html>
    <body>
       <h1>FORM</h1>
-      <p>Reference Number: {{ refNum }} </p>
-      <p>Address: {{ address }} </p>
+
+      <div class="">
+         <p>Reference Number: {{ refNum }} </p>
+      </div>
+
+      <div class="">
+         <p>Address: {{ address }} </p>
+      </div>
+
       <form action = "http://localhost:5000/confirm/{{refNum}}" method = "POST">
-          <p>1. Identify development type
-              <select name = "devtype">
-                    <option value = "0" selected>Single storey dwelling</option>
-                    <option value = "1">Two storey dwelling</option>
-                    <option value = "2">Duplex/triplex</option>
-             </select>
-          </p>
-          <p>2. Please provide a detailed description of the proposed works</p>
-            <textarea rows = "5" cols = "60" name = "desc"></textarea>
-          <p>3. Cost/value of works <input name="cost" /></p>
-          <p>4. Height <input name="height" /></p>
-          <input type = "submit" value = "submit" >
+
+          <div class="">
+            <p>1. Identify development type
+               <select name = "devtype">
+                     <option>Please select an option...</option>
+                     <option value="Neighbourhood Centre">Neighbourhood Centre</option>
+                     <option value="Local Centre">Local Centre</option>
+                     <option value="Mixed Use">Mixed Use</option>
+                     <option value="Business Development">Business Development</option>
+                     <option value="Enterprise Corridor">Enterprise Corridor</option>
+                     <option value="Environmental Conseervation">Environmental Conseervation</option>
+                     <option value="Environmental Management">Environmental Management</option>
+                     <option value="General Industrial">General Industrial</option>
+                     <option value="Light Industrial">Light Industrial</option>
+                     <option value="General Residential">General Residential</option>
+                     <option value="Low Density Residential">Low Density Residential</option>
+                     <option value="Medium Density Residential">Medium Density Residential</option>
+                     <option value="High Density Residential">High Density Residential</option>
+                     <option value="Public Recreation">Public Recreation</option>
+                     <option value="Private Recreation">Private Core</option>
+                     <option value="Primary Production">Primary Production</option>
+                     <option value="Rural Landscape">Rural Landscape</option>
+                     <option value="Primary Production Small Lots">Primary Production Small Lots</option>
+                     <option value="Village">Village</option>
+                     <option value="Speical Activites">Speical Activites</option>
+                     <option value="Infranstructure">Infranstructure</option>
+                     <option value="Tourist">Tourist</option>
+                     <option value="Recreational Waterways">Recreational Waterways</option>
+                     <option value="Primary Production Small Lots">Primary Production Small Lots</option>
+               </select>
+            </p>
+         </div>
+
+          <div class="">
+            <p>2. Height <input name="height"/></p>
+          </div>
+
+          <div class="">
+             <p>3. Square meters <input name="squareMeters"/></p>
+          </div>
+          <input type = "submit" value = "Submit" >
       </form>
    </body>
 </html>
