@@ -15,7 +15,7 @@
          <p>Address: {{ address }} </p>
       </div>
 
-      <form action = "http://localhost:5000/confirm/{{refNum}}" method = "POST">
+      <form>
 
           <div class = "">
             <p>1. Identify development type
@@ -53,33 +53,57 @@
          <div class = "" id = "otherArea" style = "display:none">
             <Label>What are you building? Could you describe what you are building?</Label>
             <blk/>
-            <textarea rows=5 cols=40></textarea>
+            <textarea rows = 5 cols = 40 id = otherTextArea></textarea>
             <blk/>
          </div>
 
           <div class = "">
-            <p>2. Height <input name="height"/></p>
+            <p>2. Height <input name = "height" id = "height"/></p>
           </div>
 
           <div class = "">
-             <p>3. Square meters <input name="squareMeters"/></p>
+             <p>3. Square meters <input name="squareMeters" id = "squareMeters"/></p>
           </div>
-          <input type = "submit" value = "Submit" >
+          <input type = "submit" value = "Submit" id = "submit">
       </form>
    </body>
+
+   <!--"http://localhost:5000/confirm/{{refNum}}" method = "POST"-->
 
    <script type="text/javascript">
 
       function validData() {
 
          //development type
-         var choosen = $(devtype).val();
+         var choosen = $("#devtype").val();
+         var height = $("#height").val();
+         var squareMeters = $("#squareMeters").val();
 
+         if (choosen == "Please select an option...") {
+            // Error message
+            return false;
+         } 
+
+         if (choosen == "Other" && $("#otherTextArea") == "") {
+            // Error message
+            return false;
+         }
+
+         if (height == "") {
+            // Error message
+            return false;
+         }
+
+         if (squareMeters == "") {
+            // Error message
+            return false;
+         }
+         return true;
       }
 
       function sendData() {
          $.ajax({
-                url: '/form',
+                url: '/mainForm',
                 data: $('form'),
                 type: 'POST',
                 success: function(response) {
@@ -94,18 +118,19 @@
       $("#devtype").change(function() {
          var choosen = $("#devtype").val();
 
-         if (choosen === "Other") {
-            $("#otherArea").css("display", "none");
-         } else {
+         if (choosen == "Other") {
             $('#otherArea').css("display", "block");
+         } else {
+            $("#otherArea").css("display", "none");
          }
       });
       
       $("#submit").click(function() {
             
-            if (checkValid()) {
-               sendData();
-            }
+            console.log(validData())
+            //if (checkValid()) {
+            //   sendData();
+            //}
             //Remove this later
             console.log("data sent")
         });
