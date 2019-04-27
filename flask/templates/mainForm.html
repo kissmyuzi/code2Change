@@ -52,7 +52,9 @@
 
          <div class = "" id = "otherArea" style = "display:none">
             <Label>What are you building? Could you describe what you are building?</Label>
+            <blk/>
             <textarea rows=5 cols=40></textarea>
+            <blk/>
          </div>
 
           <div class = "">
@@ -68,6 +70,27 @@
 
    <script type="text/javascript">
 
+      function validData() {
+
+         //development type
+         var choosen = $(devtype).val();
+
+      }
+
+      function sendData() {
+         $.ajax({
+                url: '/form',
+                data: $('form'),
+                type: 'POST',
+                success: function(response) {
+                    console.log(response);
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+      }
+
       $("#devtype").change(function() {
          var choosen = $("#devtype").val();
 
@@ -78,19 +101,12 @@
          }
       });
       
-      $("#submission").click(function() {
-            console.log("button clicked")
-            $.ajax({
-                url: '/form',
-                data: $('form'),
-                type: 'POST',
-                success: function(response) {
-                    console.log(response);
-                },
-                error: function(error) {
-                    console.log(error);
-                }
-            })
+      $("#submit").click(function() {
+            
+            if (checkValid()) {
+               sendData();
+            }
+            //Remove this later
             console.log("data sent")
         });
    </script>
