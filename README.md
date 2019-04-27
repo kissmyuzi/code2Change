@@ -1,15 +1,11 @@
-# Code2Change - Crime Reporting Platform
+# Code2Change - Automated Local Environmental Plan (ALEP)
 
-This team was formed to create an effective solution to a problem in the Code2Change hackathon. The application that this team is making is focused on giving people an alternative choice for submitting anoynomous crime reports.
+This team was formed to create an effective solution to a problem in the Code2Change hackathon. The application that this team is making is focused on providing an automated solution for confirmation Local Environmental Plan.
 
 
 ## Platform Features
 
-The crime report will be The reports that people will be able to submit include a description, a catagory, instant user location and time. Optionally people are able to submit a photo or a video footage of the event. Optionally people are able to log in to give more information about the reporter. 
-
-The Software would have a public announcements section which can inform people about dangerous areas and police announcements.
-
-The Software will also have a platform to allow victims and police officers to interact with each other in an effective way.
+The main purpose for this Web based solution is to automate the Development Application Form process. 
 
 ## The Lil Nas X Team
 
