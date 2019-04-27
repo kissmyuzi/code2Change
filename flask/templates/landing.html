@@ -17,7 +17,7 @@
             <div class="goto">
                 <Label>Click the button below to submit a development form.</Label>
                 <br/>
-                <form action="contact.html">
+                <form action="http://localhost:5000/submitForm" method='post'>
                     <input type="submit" value="Submit Form">
                 </form>
             </div>
@@ -25,7 +25,9 @@
             <div class="goto">
                 <Label>Click the button below to log in as a City Planner.</Label>
                 <br/>
-                <input type="submit" value="City Planner Login">
+                <form action="http://localhost:5000/loginPlanners" method='post'>
+                    <input type="submit" value="City Planner Login">
+                </form>
             </div>
         </div>
     </body>

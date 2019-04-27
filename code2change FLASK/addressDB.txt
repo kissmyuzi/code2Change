@@ -1,7 +1,0 @@
-1X4F3UC7A2,123 Fake Street,Liverpool,NSW,2170
-E0AK5NXUZ9,1 Long Street,Fairfield,NSW,2170
-VHIEMBVMBD,12 Abcd street,Leih,New South Wales,2018
-LX7S9UHYW3,747 Pacific Highway,Sydney,New South Wales,2080
-GHSTSLCNAG,sample,sample,sample,sample
-CGIA365BSI,747 Pacific Highway,Sydney,New South Wales,2080
-36AD6ZJQ5M,sample,sample,sample,sample

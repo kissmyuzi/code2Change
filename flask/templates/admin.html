@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+         {% for value in data %}
+            <table border = 1>
+            {% for key, value in value %}
+               {% if key == "ref" %}
+               <tr>
+                  <th> {{ key }} </th>
+                  <td><a href="http://localhost:5000/view/{{value}}"> {{ value }}</a></td>
+               </tr>
+               {% else %}
+               <tr>
+                  <th> {{ key }} </th>
+                  <td> {{ value }} </td>
+               </tr>
+               {% endif %}
+            {% endfor %}
+            </table>
+         {% endfor %}
+   </body>
+</html>
