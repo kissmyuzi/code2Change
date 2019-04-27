@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, jsonify
 import csv
 import random, string
-import pandas
 
 app = Flask(__name__)
 
