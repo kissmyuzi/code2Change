@@ -1,0 +1,143 @@
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+</head>
+<div id="section">
+
+	<div class="">
+		<div class="input-block">
+			<label for="">Enter your address:</label>
+			<input type="text" class="form-control">
+		</div>
+	</div>
+
+	<div class="">
+		<div class="purpose-block">
+			<select>
+					<option>Please select an option...</option>
+					<option value="Neighbourhood Centre">Neighbourhood Centre</option>
+					<option value="Local Centre">Local Centre</option>
+					<option value="Mixed Use">Mixed Use</option>
+					<option value="Business Development">Business Development</option>
+					<option value="Enterprise Corridor">Enterprise Corridor</option>
+					<option value="Environmental Conseervation">Environmental Conseervation</option>
+					<option value="Environmental Management">Environmental Management</option>
+					<option value="General Industrial">General Industrial</option>
+					<option value="Light Industrial">Light Industrial</option>
+					<option value="General Residential">General Residential</option>
+					<option value="Low Density Residential">Low Density Residential</option>
+					<option value="Medium Density Residential">Medium Density Residential</option>
+					<option value="High Density Residential">High Density Residential</option>
+					<option value="Public Recreation">Public Recreation</option>
+					<option value="Private Recreation">Private Core</option>
+					<option value="Primary Production">Primary Production</option>
+					<option value="Rural Landscape">Rural Landscape</option>
+					<option value="Primary Production Small Lots">Primary Production Small Lots</option>
+					<option value="Village">Village</option>
+					<option value="Speical Activites">Speical Activites</option>
+					<option value="Infranstructure">Infranstructure</option>
+					<option value="Tourist">Tourist</option>
+					<option value="Recreational Waterways">Recreational Waterways</option>
+					<option value="Primary Production Small Lots">Primary Production Small Lots</option>
+				</select>
+
+				<div class="">
+					<div class="input-block69">
+						<label for="">category</label>
+						<select type="text" id="category" class="form-control69">
+							<option>Height-Test</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="">
+					<div class="input-block">
+						<label for="">Height</label>
+						<input type="number" id="height" class="form-control">
+					</div>
+				</div>
+
+				<div class="">
+					<div class="input-block">
+						<label for="">Please enter square meters:</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="">
+					<div class="input-block">
+						<label for="">Your Floor Space Ratio (FSR) is:</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="">
+					<div class="input-block">
+						<label for="">Land Reservation</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="">
+					<div class="input-block">
+						<label for="">Message Subject</label>
+						<input type="text" class="form-control">
+					</div>
+				</div>
+
+				<div class="">
+					<div class="input-block textarea">
+						<label for="">Drop your message here</label>
+						<textarea rows="3" type="text" class="form-control"></textarea>
+					</div>
+				</div>
+
+				<div class="">
+					<button class="square-button" onclick="submit()">Send</button>
+				</div>
+			</form>
+		</section>
+	</div>
+
+	<button onclick="myFunction()">Click Me</button>
+<div class="hideinitial" id="myDIV">
+  This is my DIV element.
+</div>
+
+
+<script type="text/javascript">
+	var type = {"G": 9}
+
+	function submit() {
+		// validate forms
+		console.log(type[$("#category").val()]);
+		if( $("#height").val() <= type[$("#category").val()]) {
+			//ajax post form
+			console.log("success");
+		} else {
+			console.log("fail");
+			// $("#height") add class invalid
+		}
+	}
+
+	function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<<style media="screen">
+	.h1-head {
+		font-size: 90px;
+	}
+
+	.hideinitial {
+		display: none;
+	}
+
+</style>
+</html>
