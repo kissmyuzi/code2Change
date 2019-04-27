@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+   <body>
+      <h1>FORM</h1>
+      <p>Reference Number: {{ refNum }} </p>
+      <p>Address: {{ address }} </p>
+      <form action = "http://localhost:5000/confirm/{{refNum}}" method = "POST">
+          <p>1. Identify development type
+              <select name = "devtype">
+                    <option value = "0" selected>Single storey dwelling</option>
+                    <option value = "1">Two storey dwelling</option>
+                    <option value = "2">Duplex/triplex</option>
+             </select>
+          </p>
+          <p>2. Please provide a detailed description of the proposed works</p>
+            <textarea rows = "5" cols = "60" name = "desc"></textarea>
+          <p>3. Cost/value of works <input name="cost" /></p>
+          <p>4. Height <input name="height" /></p>
+          <input type = "submit" value = "submit" >
+      </form>
+   </body>
+</html>
