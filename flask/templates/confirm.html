@@ -1,5 +1,7 @@
 <!doctype html>
-<html>
+<html style="text-align: center;">
+<br>
+</br>
   <style>
     .error {
       background-color: red;
@@ -19,16 +21,24 @@
 
 
    <h3>REFERENCE NUMBER: {{ref}}</h3>
-      <table border = 1>
+      <table style="padding-left: 730px;">
          {% for key, value in result.items() %}
             <tr class="{{ error[key] }}">
-               <th > {{ key }} </th>
+               <th> {{ key }} </th>
                <td> {{ value }} </td>
             </tr>
          {% endfor %}
       </table>
         {% if errorFound %}
-          <button onclick="goBack()">Go Back</button>
+          <button onclick="goBack()">BACK TO FORM</button>
+          {% else %}
+          <br>
+        </br>
+          <h1 style="font-size: 20px; text-align: center;">Your application has been submitted. Please wait for our response.</h1>
+          &nbsp;
+          <form action="http://localhost:5000/" method = "POST">
+              <button>RETURN TO HOMEPAGE</button>
+          </form>
         {% endif %}
 
    </body>
@@ -37,6 +47,10 @@
 <script>
 function goBack() {
   window.history.back();
+}
+
+function goBackHome() {
+
 }
 </script>
 </html>

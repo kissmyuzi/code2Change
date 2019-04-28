@@ -1,9 +1,10 @@
- <html>
+ <html style="background:#008751; text-align: center;">
 
 <body>
   <div id="login">
-            <h1>Welcome Back!</h1>
-
+    <br>
+  </br>
+<h1 style="font-size: 60px; text-align: center; "class="welcome">Welcome Back, City Planners!</h1>
             <form action="/admin" >
 
               <div class="field-wrap">
@@ -13,6 +14,9 @@
               <input type="user"required autocomplete="off"/>
             </div>
 
+            <br>
+          </br>
+
             <div class="field-wrap">
               <label>
                 Password<span class="req">*</span>
@@ -20,7 +24,10 @@
               <input type="password"required autocomplete="off"/>
             </div>
 
-            <button class="button button-block">Log In</button>
+            <br>
+          </br>
+
+            <button class="square-button">Log In</button>
 
             </form>
 
@@ -30,4 +37,44 @@
 
   </div> <!-- /form -->
 </body>
+
+<style>
+.welcome {
+  font-family: "Roboto", Helvetica, Arial, sans-serif; font-size: 60px; text-align: center;
+}
+
+.square-button {
+  background-color: #00B16A;
+  color: #fff;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0 60px;
+  height: 60px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.square-button:hover, .square-button:focus {
+  background-color: #66CC99;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+</style>
+
+
 </html>

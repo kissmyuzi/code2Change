@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET','POST'])
 def landing():
     return render_template("landing.html")
 
@@ -104,9 +104,8 @@ def view(ref):
                 result = [
                     ("ref", row[0]),
                     ("devtype", row[1]),
-                    ("desc", row[2]),
-                    ("cost", row[3]),
-                    ("height", row[4]),
+                    ("height", row[2]),
+                    ("squareMeters", row[3])
                 ]
                 return render_template("view.html", address=address, data=result)
 
