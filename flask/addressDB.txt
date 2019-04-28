@@ -6,3 +6,4 @@ GHSTSLCNAG,sample,sample,sample,sample
 CGIA365BSI,747 Pacific Highway,Sydney,New South Wales,2080
 36AD6ZJQ5M,sample,sample,sample,sample
 3JGJNKI8C6,sample,sample,sample,sample
+20B2HLN72R,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
