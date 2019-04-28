@@ -1,34 +1,91 @@
-<html>
+<html style="background:#008751; text-align: center;">
     <head>
     </head>
 
     <body>
-
-        <h1 class="welcome">ALEP</h1>
+      &nbsp;
+        <h1 style="font-size: 60px; text-align: center; "class="welcome">ALEP</h1>
 
         <div class="description">
             <p>
                 Welcome to ALEP (Automated Local Environmental Plan). This is the place for submitting
-                local development plans. 
+                local development plans.
             </p>
+            <br>
+          </br>
         </div>
 
         <div class="select">
             <div class="goto">
                 <Label>Click the button below to submit a development form.</Label>
+                <br>
                 <br/>
                 <form action="http://localhost:5000/addressForm" method='post'>
-                    <input type="submit" value="Submit Form">
+                    <input class="square-button" type="submit" value="Submit Application Form">
                 </form>
             </div>
             <br/>
             <div class="goto">
                 <Label>Click the button below to log in as a City Planner.</Label>
+                <br>
                 <br/>
                 <form action="http://localhost:5000/loginPlanners" method='post'>
-                    <input type="submit" value="City Planner Login">
+                    <input class="square-button" type="submit" value="City Planner Login">
                 </form>
             </div>
         </div>
     </body>
+
+<style>
+.welcome {
+  font-family: "Roboto", Helvetica, Arial, sans-serif; font-size: 60px; text-align: center;
+}
+
+.square-button {
+  background-color: #00B16A;
+  color: #fff;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 0 60px;
+  height: 60px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.square-button:hover, .square-button:focus {
+  background-color: #66CC99;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+}
+
+.description {
+  font-size: 18px;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+}
+
+.goto {
+  font-size: 18px;
+  font-weight: 600;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+
+}
+
+</style>
+
+
 </html>
