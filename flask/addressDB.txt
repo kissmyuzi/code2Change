@@ -16,3 +16,5 @@ DVLP1QR8UM,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho
 X3OIJ5IFN5,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
 JCZPKSS7CZ,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
 9N4MS7C6TT,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
+K30793L7PU,"92A Marion street, Unit 4",Leichhardt,NSW,2040
+T1HBG38J5I,sdf,Ho Chi Minh,Ho Chi Minh City,70000
