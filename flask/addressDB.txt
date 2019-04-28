@@ -12,3 +12,7 @@ CGIA365BSI,747 Pacific Highway,Sydney,New South Wales,2080
 WW7XOVHE2D,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
 J5R3BBJVBF,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
 5MYGK6DZN1,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
+DVLP1QR8UM,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
+X3OIJ5IFN5,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
+JCZPKSS7CZ,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000
+9N4MS7C6TT,"294/49 Street 8, Ward 11, Go Vap Dist, Ho Chi Minh City, Vietnam",Ho Chi Minh,Ho Chi Minh City,70000

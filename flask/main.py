@@ -37,7 +37,7 @@ def finish(ref):
         result = request.form
         with open("formDB.txt", "a") as file:
             writer = csv.writer(file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
-            #writer.writerow([ref, result["devtype"], result["desc"], result["cost"], result["height"]])
+            writer.writerow([ref, result["devtype"], result["height"], result["squareMeters"]])
 
 
     with open('./templates/ref_json.json') as json_obj:
@@ -80,9 +80,9 @@ def admin():
             result.append([
                 ("ref", row[0]),
                 ("devtype", row[1]),
-                ("desc", row[2]),
-                ("cost", row[3]),
-                ("height", row[4]),
+                ("height", row[2]),
+                ("squareMeters", row[3]),
+
             ])
 
     return render_template("admin.html", data=result)
