@@ -8,15 +8,15 @@ app = Flask(__name__)
 def landing():
     return render_template("landing.html")
 
-@app.route('/submitForm', methods = ['GET', 'POST'])
+@app.route('/addressForm', methods = ['GET', 'POST'])
 def submitForm():
-    return render_template("submitForm.html")
+    return render_template("addressForm.html")
 
 @app.route('/loginPlanners', methods = ['POST'])
 def loginPlanners():
     return render_template("loginPlanners.html")
 
-@app.route('/form', methods = ['POST', 'GET'])
+@app.route('/mainForm', methods = ['POST', 'GET'])
 def form():
     if request.method == 'POST':
         refNum = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(10))
@@ -27,7 +27,7 @@ def form():
 
     address = result["Address"] + " "+ result["City"] + " " + result["State"] + " " + result["ZIP"]
 
-    return render_template("form.html", refNum=refNum, address=address)
+    return render_template("mainForm.html", refNum=refNum, address=address)
 
 @app.route('/confirm/<string:ref>',methods = ['POST', 'GET'])
 def finish(ref):
@@ -36,7 +36,7 @@ def finish(ref):
         result = request.form
         with open("formDB.txt", "a") as file:
             writer = csv.writer(file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
-            writer.writerow([ref, result["devtype"], result["desc"], result["cost"], result["height"]])
+            #writer.writerow([ref, result["devtype"], result["desc"], result["cost"], result["height"]])
     return render_template("confirm.html", ref=ref, result=result)
 
 
