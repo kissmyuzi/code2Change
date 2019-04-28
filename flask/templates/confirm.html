@@ -1,12 +1,28 @@
 <!doctype html>
 <html>
+  <style>
+    .error {
+      background-color: red;
+    }
+
+    .normal {
+      background-color: green;
+    }
+  </style>
    <body>
-   <h1>DONE</h1>
+     {% if errorFound %}
+      <h1>Unsuccessful</h1>
+      {% else %}
+      <h1>DONE</h1>
+     {% endif %}
+
+
+
    <h3>REFERENCE NUMBER: {{ref}}</h3>
       <table border = 1>
          {% for key, value in result.items() %}
-            <tr>
-               <th> {{ key }} </th>
+            <tr class="{{ error[key] }}">
+               <th > {{ key }} </th>
                <td> {{ value }} </td>
             </tr>
          {% endfor %}

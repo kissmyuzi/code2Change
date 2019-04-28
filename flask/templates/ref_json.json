@@ -1,0 +1,15 @@
+{
+    "Fairfield":
+    {
+        "Local Center": {
+          "height": 20,
+          "squareMeters": 200
+        },
+
+        "Commercial Use": {
+          "height": 40,
+          "squareMeters": 150
+        }
+    }
+
+}

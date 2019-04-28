@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, jsonify
 import csv
 import random, string
+import json
 
 app = Flask(__name__)
 
@@ -37,7 +38,35 @@ def finish(ref):
         with open("formDB.txt", "a") as file:
             writer = csv.writer(file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
             #writer.writerow([ref, result["devtype"], result["desc"], result["cost"], result["height"]])
-    return render_template("confirm.html", ref=ref, result=result)
+
+
+    with open('./templates/ref_json.json') as json_obj:
+        data = json.load(json_obj)
+    print(data['Fairfield']['Local Center'])
+    new_data = data["Fairfield"]['Local Center']
+    # return_result = {}
+    # return_result['error'] = []
+    error = {}
+    errorFound = False
+    count = 0
+    print('Data items: ',new_data.items())
+    for key, value in new_data.items():
+        count += 1
+        if count > 2:
+            break
+        print(key, value, (value >= int(result[key])))
+        # return_result[key] = value
+
+        if (value >= int(result[key])):
+            error[key] = "normal"
+        else:
+            error[key] = "error"
+            errorFound = True
+
+
+
+
+    return render_template("confirm.html", ref=ref, result=result, error=error, errorFound=errorFound)
 
 
 @app.route('/admin')
